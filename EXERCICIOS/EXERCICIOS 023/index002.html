@@ -28,6 +28,13 @@
         td.num {
             text-align: right;
         }
+
+        caption{
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +42,9 @@
     <h1>Uso de Tabela Grandes</h1>
     <!--
         Anatomia de Tabelas Grandes
+
+        Caption 
+         Seria a legenda de nossa tabela, que fica na parte superior
 
         Table
           Theader
@@ -46,10 +56,13 @@
     -->
 
     <table>
-        <thead>
+
+        <caption>Populacao Brasileira</caption>
+
+         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao</th>
+                <th scope="col">Estado</th>
+                <th style="width: 100px;">Populacao</th>
             </tr>
         </thead>
 
@@ -74,7 +87,7 @@
 
         <tfoot>
 
-            <th>total de Habitantes</th>
+            <th scope="row">total de Habitantes</th>
             <td class="num"><strong>000 000 000</strong> </td>
 
         </tfoot>
